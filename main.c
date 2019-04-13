@@ -22,5 +22,25 @@ void line() {
 	printf("\n");
 }
 int main(int argc, char const *argv[]) {
+	printf("%s\n", YELLOW);
+	for(int index=0; index < 9; index++) {
+		display(25,' ');
+		display(3,'*');
+		if(index > 5) {
+			display(8,' ');
+			if(index == 6) {
+				display(6,'*');
+				display(1,' ');
+			}
+			else {
+				display(3,'*');
+				display(4,' ');
+			}
+		}
+		else {
+			display(15,' ');
+		}
+		line();
+	}
 	return 0;
 }
