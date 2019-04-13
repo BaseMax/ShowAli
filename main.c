@@ -42,5 +42,26 @@ int main(int argc, char const *argv[]) {
 		}
 		line();
 	}
+	// printf("\n\n\n\n");
+	for(int index=0; index < 6; index++) {
+		if(index < 4) {
+			display(3,'*');
+			display(11,' ');
+			if(index == 3) {
+				display(2,'*');
+			}
+			else {
+				display(28,'*');
+			}
+		}
+		else if(index == 4) {
+			display(17,'*');
+		}
+		else if(index == 5) {
+			display(1,' ');
+			display(15,'*');
+		}
+		line();
+	}
 	return 0;
 }
